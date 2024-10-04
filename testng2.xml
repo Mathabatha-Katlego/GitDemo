@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+    <!-- Define TestNG listeners -->
+    <listeners>
+        <listener class-name="test.Listeners"/>
+    </listeners>
+    
+    <!-- Personal Loan Test -->
+    <test thread-count="5" name="Personal Loan">
+        <parameter name="URL" value="qalickacademy.com" />
+        <classes>
+            <class name="test.day1">
+                <methods>
+                    <include name="Demo" />
+                </methods>
+            </class>
+            <class name="test.day2" />
+            <class name="test.day4" />
+        </classes>
+    </test> <!-- Test -->
+    
+    <!-- Car Loan Test -->
+</suite> <!-- Suite -->

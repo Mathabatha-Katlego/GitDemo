@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Loan Department" parallel="tests" thread-count = "10">
+  <listeners>
+  <Listener class-name="test.Listeners"/>
+  
+  </listeners>
+    
+    <!-- Personal Loan Test -->
+    <test thread-count="5" name="Personal Loan">
+        <parameter name="URL" value="qalickacademy.com" />
+
+        <classes>
+            <class name="test.day1">
+                <methods>
+                    <include name="Demo" />
+                </methods>
+            </class>
+            <class name="test.day2" />
+            <class name="test.day4" />
+        </classes>
+    </test> <!-- Test -->
+    
+    <!-- Car Loan Test -->
+    <test name="Car Loan">
+        <classes>
+            <class name="test.day3">
+                <methods>
+                    <!-- Exclude methods that match the pattern "mobile.*" -->
+                    <exclude name="webCarLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Car Loan -->
+</suite> <!-- Suite -->
