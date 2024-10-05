@@ -9,13 +9,13 @@ public class day1 {
 	@AfterTest
 	public void lastexecution()
 	{
-		System.out.println("I will execute last");
+		System.out.println("I will execute at the end");
 	}
 	
 	@Test(timeOut=4000)
 	public void Demo() 
 	{
-		System.out.println("Hello");
+		System.out.println("Hi");
 	}
 	
 	@AfterSuite
@@ -27,7 +27,7 @@ public class day1 {
 	@Test
 	public void Demo2()
 	{
-		System.out.println("Bye!!!");
+		System.out.println("Good1Bye!!!");
 	}
 
 }
